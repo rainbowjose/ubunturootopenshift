@@ -52,7 +52,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: ubuntusa
-    namespace: minio
+    namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
   name: ubuntucr
